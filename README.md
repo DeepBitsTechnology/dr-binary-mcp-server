@@ -50,15 +50,12 @@ To use this MCP server with Claude Code, add the following to your Claude Code c
 
 ```json
 {
-  "mcpServers": {
-    "deepbits": {
-      "command": "npx",
-      "args": ["mcp-deepbits-server"],
-      "env": {
-        "PORT": "3000"
-      }
+    "mcpServers": {
+        "drbinary": {
+            "type": "http",
+            "url": "http://localhost:3000/mcp"
+        }
     }
-  }
 }
 ```
 
